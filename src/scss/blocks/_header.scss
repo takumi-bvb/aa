@@ -1,0 +1,23 @@
+@use "../mixin" as *;
+
+.header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__list {
+		display: flex;
+
+		@include sm {
+			display: none;
+		}
+	}
+
+	&__sp-menu {
+		@include sm_up {
+			display: none;
+		}
+	}
+}
